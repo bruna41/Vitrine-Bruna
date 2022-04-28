@@ -1,13 +1,13 @@
 body::-webkit-scrollbar{
-    width: 12px;
+    width: 8px;
 }
 body::-webkit-scrollbar-track{
      background-color: rgb(70, 12, 70);   
 }
 body::-webkit-scrollbar-thumb{
-    background-color: rgb(238, 9, 9);
+    background-color: rgb(245, 138, 138);
     border-radius: 10px;
-    border: 2px solid rgb(238, 9, 9);
+    border: 2px solid rgb(245, 138, 138);
 }
 
 .body {
@@ -62,10 +62,10 @@ body::-webkit-scrollbar-thumb{
     font-weight: bold;
 }
 
-.card-body {
+.card-bodys {
     background-color: black;
 }
-.card-body:hover{
+.card-bodys:hover{
     border: 1px  rgb(245, 138, 138);
     border-radius: 0.25rem; 
     border-style: outset;
@@ -91,4 +91,23 @@ body::-webkit-scrollbar-thumb{
     border-radius: 0.25rem;
     border-style: inset;
     margin: 5px 60px 5px 60px;
+}
+
+.card-img-top {
+    max-width:80px;
+    max-height:250px;
+    width: auto;
+    height: auto;
+    margin-left: 120px;
+}
+
+.cardPS{
+    background-color: black;
+}
+
+.link{
+    text-decoration: none;
+}
+.link:hover{
+    color: rgb(245, 138, 138);
 }
