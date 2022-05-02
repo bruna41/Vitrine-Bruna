@@ -12,11 +12,11 @@ body::-webkit-scrollbar-thumb {
 .body {
     margin: 0px;
     padding: 0px;
-    background-color: black;
 }
 .bg {
-    background-color: black;
+    background-color: rgb(253, 249, 249);
 }
+
 .logo {
     color: rgb(70, 12, 70);
     font-style: italic;
@@ -25,26 +25,28 @@ body::-webkit-scrollbar-thumb {
     padding: 20px 300px 0px 15px;
 }
 .menuzinho {
-    background-color: black;
+    background-color: rgb(253, 249, 249);
     border: 3px rgb(122, 12, 122);
     border-radius: 10px;
     border-style: inset;
     width: 10px;
     height: 15px;
 }
-.sun {
-    color: rgb(248, 208, 31);
+.moon {
+    color: rgb(13, 11, 138);
 }
-.sun:hover {
-    color: rgb(248, 244, 31);
+
+.moon:hover {
+    color: rgb(49, 47, 194);
 }
 .hr {
-    color: rgb(238, 9, 9);
+    color: rgb(13, 11, 138);
 }
 
 .titulo {
     color: rgb(19, 16, 201);
     font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
 }
 .subtitulo {
     color: rgb(173, 58, 173);
@@ -52,7 +54,7 @@ body::-webkit-scrollbar-thumb {
     font-weight: bold;
 }
 .card-bodys {
-    background-color: black;
+    background-color: white;
 }
 .card-bodys:hover {
     border: 1px rgb(245, 138, 138);
@@ -66,14 +68,14 @@ body::-webkit-scrollbar-thumb {
     display: none;
 }
 #btnLeiaMais {
-    background-color: black;
+    background-color: white;
     border: 2px rgb(19, 16, 201);
     border-radius: 0.25rem;
     border-style: inset;
     margin: 5px 60px 5px 60px;
 }
 #btnLeiaMais2 {
-    background-color: black;
+    background-color: white;
     border: 2px rgb(19, 16, 201);
     border-radius: 0.25rem;
     border-style: inset;
@@ -90,7 +92,7 @@ body::-webkit-scrollbar-thumb {
     height: auto;
 }
 .cardPS {
-    background-color: black;
+    background-color: white;
 }
 .link {
     text-decoration: none;
