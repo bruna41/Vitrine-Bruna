@@ -1,18 +1,26 @@
+* {
+    font-weight: bold;
+}
+
 body::-webkit-scrollbar {
     width: 8px;
 }
+
 body::-webkit-scrollbar-track {
     background-color: rgb(70, 12, 70);
 }
+
 body::-webkit-scrollbar-thumb {
     background-color: rgb(245, 138, 138);
     border-radius: 10px;
     border: 2px solid rgb(245, 138, 138);
 }
+
 .body {
     margin: 0px;
     padding: 0px;
 }
+
 .bg {
     background-color: rgb(253, 249, 249);
 }
@@ -24,6 +32,7 @@ body::-webkit-scrollbar-thumb {
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 20px 300px 0px 15px;
 }
+
 .menuzinho {
     background-color: rgb(253, 249, 249);
     border: 3px rgb(122, 12, 122);
@@ -32,13 +41,15 @@ body::-webkit-scrollbar-thumb {
     width: 10px;
     height: 15px;
 }
+
 .moon {
-    color: rgb(13, 11, 138);
+    color: rgb(10, 9, 112);
 }
 
 .moon:hover {
     color: rgb(49, 47, 194);
 }
+
 .hr {
     color: rgb(13, 11, 138);
 }
@@ -48,25 +59,32 @@ body::-webkit-scrollbar-thumb {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
 }
+
 .subtitulo {
     color: rgb(173, 58, 173);
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
 }
+
 .card-bodys {
     background-color: white;
 }
+
 .card-bodys:hover {
-    border: 1px rgb(245, 138, 138);
+    border: 2px rgb(243, 23, 23);
     border-radius: 0.25rem;
     border-style: outset;
+    padding: 4px;
 }
+
 #leiaMais {
     display: none;
 }
+
 #leiaMais2 {
     display: none;
 }
+
 #btnLeiaMais {
     background-color: white;
     border: 2px rgb(19, 16, 201);
@@ -74,6 +92,7 @@ body::-webkit-scrollbar-thumb {
     border-style: inset;
     margin: 5px 60px 5px 60px;
 }
+
 #btnLeiaMais2 {
     background-color: white;
     border: 2px rgb(19, 16, 201);
@@ -91,12 +110,15 @@ body::-webkit-scrollbar-thumb {
     width: auto;
     height: auto;
 }
+
 .cardPS {
     background-color: white;
 }
+
 .link {
     text-decoration: none;
 }
+
 .link:hover {
     color: rgb(245, 138, 138);
 }
