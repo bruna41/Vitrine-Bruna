@@ -15,110 +15,62 @@ body::-webkit-scrollbar-thumb {
 .body {
     margin: 0px;
     padding: 0px;
-    background-color: black;
+    background-color: rgb(109, 107, 107);
 }
 
-.bg {
-    background-color: black;
-}
-
-.logo {
-    color: rgb(70, 12, 70);
-    font-style: italic;
-    font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    padding: 20px 300px 0px 15px;
-}
-
-.menuzinho {
-    background-color: black;
-    border: 3px rgb(122, 12, 122);
-    border-radius: 10px;
-    border-style: inset;
-    width: 10px;
-    height: 15px;
-}
-
-.sun {
-    color: rgb(248, 208, 31);
-}
-
-.sun:hover {
-    color: rgb(248, 244, 31);
+.bg{
+    background-color: rgb(32, 28, 28);
 }
 
 .hr {
     color: rgb(238, 9, 9);
 }
 
-.titulo {
-    color: rgb(19, 16, 201);
-    font-family: 'Courier New', Courier, monospace;
-}
-
 .subtitulo {
-    color: rgb(173, 58, 173);
+    color: rgb(77, 19, 77);
+    padding-top: 5px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
-}
-
-.card-bodys {
-    background-color: black;
-}
-
-.card-bodys:hover {
-    border: 1px rgb(245, 138, 138);
-    border-radius: 0.25rem;
-    border-style: outset;
-    padding: 4px;
-}
-
-#leiaMais {
-    display: none;
-}
-
-#leiaMais2 {
-    display: none;
-}
-
-#btnLeiaMais {
-    background-color: black;
-    border: 2px rgb(19, 16, 201);
-    border-radius: 0.25rem;
-    border-style: inset;
-    margin: 5px 60px 5px 60px;
-
-}
-
-#btnLeiaMais2 {
-    background-color: black;
-    border: 2px rgb(19, 16, 201);
-    border-radius: 0.25rem;
-    border-style: inset;
-    margin: 5px 60px 5px 60px;
-
 }
 
 .card-img-top {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 80px;
+    max-width: 200px;
     max-height: 250px;
     width: auto;
     height: auto;
 }
-
-.cardPS {
-    background-color: black;
+.card-img-top:hover {
+    max-width: 1000px;
+    max-height: 350px;
 }
-
-.link {
-    text-decoration: none;
+.card-img-top1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 200px;
+    max-height: 250px;
+    width: auto;
+    height: auto;
 }
-
-.link:hover {
-    color: rgb(245, 138, 138);
+.card-img-top1:hover {
+    max-width: 800px;
+    max-height: 350px;
+}
+.card-img-top2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 200px;
+    max-height: 250px;
+    width: auto;
+    height: auto;
+}
+.card-img-top2:hover {
+    max-width: 500px;
+    max-height: 450px;
 }
 
 .centralizarBruna {

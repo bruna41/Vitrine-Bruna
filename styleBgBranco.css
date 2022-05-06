@@ -61,7 +61,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .subtitulo {
-    color: rgb(173, 58, 173);
+    color: rgb(136, 15, 136);
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
 }
@@ -71,10 +71,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 .card-bodys:hover {
-    border: 2px rgb(243, 23, 23);
+    border: 2px rgb(245, 138, 138);
     border-radius: 0.25rem;
     border-style: outset;
-    padding: 4px;
+    padding: 6px;
 }
 
 #leiaMais {
@@ -85,9 +85,17 @@ body::-webkit-scrollbar-thumb {
     display: none;
 }
 
+#leiaMais3 {
+    display: none;
+}
+
+#leiaMais4 {
+    display: none;
+}
+
 #btnLeiaMais {
     background-color: white;
-    border: 2px rgb(19, 16, 201);
+    border: 2px rgb(238, 9, 9);
     border-radius: 0.25rem;
     border-style: inset;
     margin: 5px 60px 5px 60px;
@@ -95,7 +103,7 @@ body::-webkit-scrollbar-thumb {
 
 #btnLeiaMais2 {
     background-color: white;
-    border: 2px rgb(19, 16, 201);
+    border: 2px rgb(238, 9, 9);
     border-radius: 0.25rem;
     border-style: inset;
     margin: 5px 60px 5px 60px;
@@ -120,7 +128,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .link:hover {
-    color: rgb(245, 138, 138);
+    color: rgb(230, 67, 67);
 }
 
 .centralizarBruna {
