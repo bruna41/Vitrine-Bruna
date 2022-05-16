@@ -21,6 +21,11 @@ body::-webkit-scrollbar-thumb {
     padding: 0px;
 }
 
+@media (max-width: 600px) {
+    .logo { display: none;}
+    .menuzinho { margin: 20px;}
+}
+
 .bg {
     background-color: rgb(253, 249, 249);
 }
