@@ -59,7 +59,7 @@ body::-webkit-scrollbar-thumb {
     color: rgb(13, 11, 138);
 }
 
-.fixar {
+/* .fixar {
     position: fixed;
     left: 110px;
     top: 41px;
@@ -71,7 +71,7 @@ body::-webkit-scrollbar-thumb {
 
 #sobreMim {
     padding-top: 70px;
-}
+} */
 
 .titulo {
     color: rgb(19, 16, 201);
