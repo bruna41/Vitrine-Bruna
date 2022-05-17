@@ -61,24 +61,24 @@ body::-webkit-scrollbar-thumb {
     color: rgb(238, 9, 9);
 }
 
-/* .fixar {
+.fixar {
     position: fixed;
     left: 110px;
     top: 41px;
     width: 8em;
     margin-top: -2.5em;
     background-color: black;
-    padding-top: 10px;
-} */
+    padding-top: 0px;
+}
+
+#sobreMim {
+    padding-top: 70px;
+}
 
 .titulo {
     color: rgb(19, 16, 201);
     font-family: 'Courier New', Courier, monospace;
 }
-
-/* #sobreMim {
-    padding-top: 70px;
-} */
 
 .subtitulo {
     color: rgb(173, 58, 173);
