@@ -58,7 +58,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .hr {
-    color: rgb(238, 9, 9);
+    height: 2px !important; 
+    color: rgb(196, 10, 10);
 }
 
 .fixar {
@@ -93,7 +94,8 @@ body::-webkit-scrollbar-thumb {
     border: 2px rgb(245, 138, 138);
     border-radius: 0.25rem;
     border-style: outset;
-    padding: 6px;
+    transition: 0.8s;
+    padding: 2px;
 }
 
 #leiaMais {
