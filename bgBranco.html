@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://use.fontawesome.com/0bc44fcd32.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" type="text/css" href="styleBgBranco.css" media="screen">
-    <link rel="shortcut icon" href="assets/butterfly.png"
-        type="image/x-icon" />
+    <link rel="shortcut icon" href="assets/butterfly.png" type="image/x-icon" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Vitrine-Bruna</title>
 </head>
 
@@ -18,8 +19,7 @@
     <nav class="navbar navbar-expand-lg bg">
         <div class="container-fluid fixar">
             <a href="#">
-                <img class="px-3 py-2" src="assets/butterfly.png"
-                    alt="logo de Borboleta" width="90px"></a>
+                <img class="px-3 py-2" src="assets/butterfly.png" alt="logo de Borboleta" width="90px"></a>
             <h1 class="logo">VB</h1>
             <button class="menuzinho" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,10 +64,9 @@
 
     <!-- Sobre -->
     <h1 class="titulo text-center mt-3" id="sobreMim">Sobre mim</h1>
-    <div class="container-fluid">
+    <section class="container-fluid">
         <div class="row align-items-center">
-
-            <div class="col-md-6">
+            <article class="col-md-6">
                 <div class="row d-flex justify-content-center">
                     <div class="col-md-10">
                         <div class="border-0">
@@ -96,9 +95,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </article>
 
-            <div class="col-md-6">
+            <article class="col-md-6">
                 <div class="row d-flex justify-content-center">
                     <div class="col-md-10">
                         <div class="border-0 mt-1">
@@ -123,145 +122,27 @@
                                         Também pude desenvolver habilidades comportamentais,
                                         como perda da timidez, autoconfiança, trabalho em equipe e melhorar o
                                         autoconhecimento. Finalizei, recentemente, um curso básico em React e retomei o
-                                        curso de JavaScript, aprendendo Node.js, aprofundando em Bootstrap e Angular 9. Sigo estudando e, no momento, estou empregada pela Capgemini Brasil S/A, onde pretendo crescer profissionalmente e como pessoa, construindo uma longa trajetória de contribuição mútua.</span>
+                                        curso de JavaScript, aprendendo Node.js, aprofundando em Bootstrap e Angular 9.
+                                        Sigo estudando e, no momento, estou empregada pela Capgemini Brasil S/A, onde
+                                        pretendo crescer profissionalmente e como pessoa, construindo uma longa
+                                        trajetória de contribuição mútua.</span>
                                 </p>
                                 <button class="text-black" onclick="mais2()" id="btnLeiaMais2">Leia Mais</button>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
+            </article>
         </div>
-    </div>
+    </section>
     <!-- /Sobre -->
-
-    <!-- Projetos -->
-    <h1 class="titulo text-center mt-4" id="projetos">Projetos</h1>
-    <div class="container-fluid">
-        <div class="row row-cols-1 row-cols-md-2 g-4 mt-2 d-flex justify-content-center">
-            <div class="col-md-3">
-                <a href="#"><img src="https://cdn.pixabay.com/photo/2014/04/03/10/22/butterfly-310238_960_720.png"
-                        class="card-img-top" alt="logo Borboleta"> </a>
-                <div class="border-0">
-                    <div class="card-body cardPS">
-                        <a class="link" href="#">
-                            <h5 class="card-title text-center subtitulo link">Vitrine-Bruna</h5>
-                        </a>
-                        <p class="card-text text-center text-black">Decidi desenvolver esse "site-currículo" para
-                            treinar minhas habilidades no front-end e poder contar melhor minhas experiências. De forma
-                            mais detalhada do que num currículo convencional. <b>Tecnologias:</b> HTLM, CSS, JavaScript,
-                            Bootstrap, VSCode, Git, GitHub.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <a href="https://educatea.netlify.app/#/home" target="_blank"><img src="assets/OWlilJM.png"
-                        class="card-img-top" alt="logo EducaTEA"></a>
-                <div class="border-0">
-                    <div class="card-body cardPS">
-                        <a class="link" href="https://educatea.netlify.app/#/home" target="_blank">
-                            <h5 class="card-title text-center subtitulo link">EducaTEA</h5>
-                        </a>
-                        <p class="card-text text-center text-black">Projeto Integrador do Bootcamp. Trabalho em equipe,
-                            uma rede social com o objetivo de auxiliar, com trocas de informações e perguntas entre
-                            professores, pais, responsáveis e interessados, no acolhimento e qualidade<span
-                                id="pontinhos4">... </span><span id="leiaMais4"> de vida de crianças/adolescentes do
-                                espectro autista. <b>Tecnologias:</b> Java, MySQL, PostgreSQL, Spring Boot, Security
-                                (Basic64), Eclipse, Heroku, Bootstrap, HTML, CSS, Angular, TypeScript, VSCode, Netlify,
-                                Git, GitHub. </span><a class="text-danger" style="cursor: pointer;" onclick="mais4()" id="btnLeiaMais4">Leia
-                                Mais</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <a href="https://blogbruna.netlify.app/#/entrar" target="_blank"><img
-                        src="https://images.emojiterra.com/google/android-11/512px/1f914.png" class="card-img-top"
-                        alt="logo BlogPessoal"></a>
-                <div class="border-0">
-                    <div class="card-body cardPS">
-                        <a class="link" href="https://blogbruna.netlify.app/#/entrar" target="_blank">
-                            <h5 class="card-title text-center subtitulo link">Blog Pessoal</h5>
-                        </a>
-                        <p class="card-text text-center text-black">Aplicação desenvolvida individualmente, no Bootcamp,
-                            afim de ensinar as tecnologias para aplicá-las no Projeto Integrador do Bootcamp.
-                            <b>Tecnologias:</b> Java, MySQL, PostgreSQL, Spring Boot, Security (Basic64), Eclipse,
-                            Heroku, Bootstrap, HTML, CSS, Angular, TypeScript, VSCode, Netlify, Git, GitHub.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <a href="https://bruna41.github.io/Bootstrap-TokyoGhoul/" target="_blank"><img
-                        src="https://i0.wp.com/static1.squarespace.com/static/5bfc2f03af20967c04dd3cb7/t/5c16d7c6032be42f6132f90e/1545000916921/TGLogo.png"
-                        class="card-img-top" alt="logo Bootstrap-TokyoGhoul"></a>
-                <div class="border-0">
-                    <div class="card-body cardPS">
-                        <a class="link" href="https://bruna41.github.io/Bootstrap-TokyoGhoul/" target="_blank">
-                            <h5 class="card-title text-center subtitulo link">Bootstrap-TokyoGhoul</h5>
-                        </a>
-                        <p class="card-text text-center text-black">Atividade individual com tema livre, desenvolvida no
-                            Bootcamp para aprender e treinar a ferramenta. <b>Tecnologias:</b> Bootstrap, VSCode, Git,
-                            GitHub.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <a href="https://github.com/bruna41/GenerationBrasil_ProjetoPOO" target="_blank"><img
-                        src="https://blog-geek-midia.s3.amazonaws.com/wp-content/uploads/2020/07/26213557/pngwing.com_.png"
-                        class="card-img-top" alt="logo Java"></a>
-                <div class="border-0">
-                    <div class="card-body cardPS">
-                        <a class="link" href="https://github.com/bruna41/GenerationBrasil_ProjetoPOO" target="_blank">
-                            <h5 class="card-title text-center subtitulo link">ProjetoPOO Generation Brasil</h5>
-                        </a>
-                        <p class="card-text text-center text-black">Primeiro trabalho em equipe do Bootcamp.
-                            Desenvolvemos um sistema de controle de acesso de um condomínio. Equipe muito empática e
-                            harmônica. <b>Tecnologias:</b> Java, Eclipse, Git, GitHub.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <a href="https://medium.com/@bruna41bergami" target="_blank"><img
-                        src="https://mdback.mstatic.com.br/courses/2/254cd6a45a6b4b708885d438bd35fe93.png"
-                        class="card-img-top" alt="lápis e papel"></a>
-                <div class="border-0">
-                    <div class="card-body cardPS">
-                        <a class="link" href="https://medium.com/@bruna41bergami" target="_blank">
-                            <h5 class="card-title text-center subtitulo link">Escritos</h5>
-                        </a>
-                        <p class="card-text text-center text-black">No período de cursinho pré-vestibular, fiz muitas
-                            redações e decidi publicar algumas, que realmente achei boas, no medium. Assim como, alguns
-                            poemas que escrevi.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <a href="desenhos.html" target="_blank"><img
-                        src="https://images.emojiterra.com/openmoji/v13.1/512px/270d-1f3fb.png" class="card-img-top"
-                        alt="mão segurando lápis preto"></a>
-                <div class="border-0">
-                    <div class="card-body cardPS">
-                        <a class="link" href="desenhos.html">
-                            <h5 class="card-title text-center subtitulo link">Desenhos</h5>
-                        </a>
-                        <p class="card-text text-center text-black">Gosto de me expressar por palavras e por imagens
-                            também.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /Projetos -->
 
     <!-- Profissional&Acadêmico -->
     <h1 class="titulo text-center mt-4" id="profissionalAcademico">Profissional&Acadêmico</h1>
-    <br>
-    <div class="container-fluid">
+    <section class="container-fluid">
         <div class="row row-cols-1 row-cols-md-2 g-4 mt-2 d-flex justify-content-center">
-            <div class="col-md-3">
-                <a href="https://www.capgemini.com/br-pt/" target="_blank"><img
-                        src="assets/Capgemini-Emblem.png"
+            <article class="col-md-3">
+                <a href="https://www.capgemini.com/br-pt/" target="_blank"><img src="assets/Capgemini-Emblem.png"
                         class="card-img-top" alt="logo Capgemini"></a>
                 <div class="border-0">
                     <div class="card-body cardPS">
@@ -269,12 +150,13 @@
                             <h5 class="card-title text-center subtitulo link">Capgemini Brasil S/A</h5>
                         </a>
                         <h6 class="card-subtitle mb-2 subtitulo text-center">07/2022 - o momento</h6>
-                        <p class="card-text text-center text-black">A Capgemini é uma multinacional francesa que está entre os maiores fornecedores de serviços de consultoria, tecnologia e outsourcing do mundo.
+                        <p class="card-text text-center text-black">A Capgemini é uma multinacional francesa que está
+                            entre os maiores fornecedores de serviços de consultoria, tecnologia e outsourcing do mundo.
                         </p>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-3">
+            </article>
+            <article class="col-md-3">
                 <a href="https://www.instagram.com/generationbrasil/" target="_blank"><img
                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReBSkC5VuHdyllifp-0U6EeLIIKCW48_SCM0Qz_VzqqufSIFqHPlKCq_HuZUfTFPzXj2E&usqp=CAU"
                         class="card-img-top" alt="logo Generation Brasil"></a>
@@ -290,12 +172,13 @@
                                 ótima experiência de convivência, aprendi a trabalhar em equipe com desenvolvimento Full
                                 Stack, melhorei minha comunicação e autoconfiança, além de mentalidade de crescimento,
                                 planejamento do futuro. Quero cursar uma faculdade na área.</span>
-                            <a class="text-danger" style="cursor: pointer;" onclick="mais3()" id="btnLeiaMais3">Leia Mais</a>
+                            <a class="text-danger" style="cursor: pointer;" onclick="mais3()" id="btnLeiaMais3">Leia
+                                Mais</a>
                         </p>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-3">
+            </article>
+            <article class="col-md-3">
                 <a href="https://www.udemy.com/" target="_blank"><img
                         src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/t1ujun3nwdoehf5k0qaf"
                         class="card-img-top" alt="logo Udemy"></a>
@@ -311,8 +194,8 @@
                         </p>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-3">
+            </article>
+            <article class="col-md-3">
                 <a href="https://www.cps.sp.gov.br/" target="_blank"><img
                         src="http://etecperuibe.com.br/wp-content/uploads/2021/02/Logo.png" class="card-img-top"
                         alt="logo CPS"></a>
@@ -326,8 +209,8 @@
                             encontrei na programação. Me apaixonei pela área e pela linguagem.</p>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-3">
+            </article>
+            <article class="col-md-3">
                 <a href="https://uspdigital.usp.br/apolo/" target="_blank"><img
                         src="https://uspdigital.usp.br/apolo/images/Apolo_png.png" class="card-img-top"
                         alt="logo Apolo-USP"></a>
@@ -344,8 +227,8 @@
                                 das atividades feitas</a></p>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-3">
+            </article>
+            <article class="col-md-3">
                 <a href="https://uspdigital.usp.br/apolo/" target="_blank"><img
                         src="https://uspdigital.usp.br/apolo/images/Apolo_png.png" class="card-img-top"
                         alt="logo Apolo-USP"></a>
@@ -360,8 +243,8 @@
                             autoconhecimento.</p>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-3">
+            </article>
+            <article class="col-md-3">
                 <a href="https://www.instagram.com/projeto.raiz/" target="_blank"><img
                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThJhQmY6aoiRAUjqoI4GOmWg_F9raJNl22usamvO_klk6x5_OkMgKDRKd8LuWn9_olHUw&usqp=CAU"
                         class="card-img-top" alt="logo BlogPessoal"></a>
@@ -377,8 +260,8 @@
                             sociais. Queria fazer faculdade de psicologia ou letras.</p>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-3">
+            </article>
+            <article class="col-md-3">
                 <a href="https://10demaio.com.br/" target="_blank"><img
                         src="http://10demaio.com.br/wp-content/uploads/2015/02/logo3.png" class="card-img-top"
                         alt="logo Colégio 10 de Maio"></a>
@@ -393,36 +276,153 @@
                             de português, literatura e ler.</p>
                     </div>
                 </div>
-            </div>
+            </article>
         </div>
-        <br>
-        <!-- /Profissional&Acadêmico -->
+    </section>
+    <!-- /Profissional&Acadêmico -->
 
-        <!-- Rodapé -->
-        <hr class="hr">
-        <div class="container">
-            <div class="row d-flex justify-content-center align-items-center">
-                <div class="col-md-12">
-                    <img src="assets/IMG-20220715-WA0028.jpg"
-                        alt="imagem Bruna" width="75px" height="75px" class="img-fluid rounded-circle centralizarBruna">
-                    <h4 class="text-center subtitulo">Desenvolvimento&Design</h4>
-                    <p class="text-center text-black">
-                        Bruna Bergami &copy;
-                    </p>
+    <!-- Projetos -->
+    <h1 class="titulo text-center mt-4" id="projetos">Projetos</h1>
+    <section class="container-fluid">
+        <div class="row row-cols-1 row-cols-md-2 g-4 mt-2 d-flex justify-content-center">
+            <article class="col-md-3">
+                <a href="#"><img src="https://cdn.pixabay.com/photo/2014/04/03/10/22/butterfly-310238_960_720.png"
+                        class="card-img-top" alt="logo Borboleta"> </a>
+                <div class="border-0">
+                    <div class="card-body cardPS">
+                        <a class="link" href="#">
+                            <h5 class="card-title text-center subtitulo link">Vitrine-Bruna</h5>
+                        </a>
+                        <p class="card-text text-center text-black">Decidi desenvolver esse "site-currículo" para
+                            treinar minhas habilidades no front-end e poder contar melhor minhas experiências. De forma
+                            mais detalhada do que num currículo convencional. <b>Tecnologias:</b> HTLM, CSS, JavaScript,
+                            Bootstrap, VSCode, Git, GitHub.</p>
+                    </div>
                 </div>
+            </article>
+            <article class="col-md-3">
+                <a href="https://educatea.netlify.app/#/home" target="_blank"><img src="assets/OWlilJM.png"
+                        class="card-img-top" alt="logo EducaTEA"></a>
+                <div class="border-0">
+                    <div class="card-body cardPS">
+                        <a class="link" href="https://educatea.netlify.app/#/home" target="_blank">
+                            <h5 class="card-title text-center subtitulo link">EducaTEA</h5>
+                        </a>
+                        <p class="card-text text-center text-black">Projeto Integrador do Bootcamp. Trabalho em equipe,
+                            uma rede social com o objetivo de auxiliar, com trocas de informações e perguntas entre
+                            professores, pais, responsáveis e interessados, no acolhimento e qualidade<span
+                                id="pontinhos4">... </span><span id="leiaMais4"> de vida de crianças/adolescentes do
+                                espectro autista. <b>Tecnologias:</b> Java, MySQL, PostgreSQL, Spring Boot, Security
+                                (Basic64), Eclipse, Heroku, Bootstrap, HTML, CSS, Angular, TypeScript, VSCode, Netlify,
+                                Git, GitHub. </span><a class="text-danger" style="cursor: pointer;" onclick="mais4()"
+                                id="btnLeiaMais4">Leia
+                                Mais</a></p>
+                    </div>
+                </div>
+            </article>
+            <article class="col-md-3">
+                <a href="https://blogbruna.netlify.app/#/entrar" target="_blank"><img
+                        src="https://images.emojiterra.com/google/android-11/512px/1f914.png" class="card-img-top"
+                        alt="logo BlogPessoal"></a>
+                <div class="border-0">
+                    <div class="card-body cardPS">
+                        <a class="link" href="https://blogbruna.netlify.app/#/entrar" target="_blank">
+                            <h5 class="card-title text-center subtitulo link">Blog Pessoal</h5>
+                        </a>
+                        <p class="card-text text-center text-black">Aplicação desenvolvida individualmente, no Bootcamp,
+                            afim de ensinar as tecnologias para aplicá-las no Projeto Integrador do Bootcamp.
+                            <b>Tecnologias:</b> Java, MySQL, PostgreSQL, Spring Boot, Security (Basic64), Eclipse,
+                            Heroku, Bootstrap, HTML, CSS, Angular, TypeScript, VSCode, Netlify, Git, GitHub.
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <article class="col-md-3">
+                <a href="https://bruna41.github.io/Bootstrap-TokyoGhoul/" target="_blank"><img
+                        src="https://i0.wp.com/static1.squarespace.com/static/5bfc2f03af20967c04dd3cb7/t/5c16d7c6032be42f6132f90e/1545000916921/TGLogo.png"
+                        class="card-img-top" alt="logo Bootstrap-TokyoGhoul"></a>
+                <div class="border-0">
+                    <div class="card-body cardPS">
+                        <a class="link" href="https://bruna41.github.io/Bootstrap-TokyoGhoul/" target="_blank">
+                            <h5 class="card-title text-center subtitulo link">Bootstrap-TokyoGhoul</h5>
+                        </a>
+                        <p class="card-text text-center text-black">Atividade individual com tema livre, desenvolvida no
+                            Bootcamp para aprender e treinar a ferramenta. <b>Tecnologias:</b> Bootstrap, VSCode, Git,
+                            GitHub.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="col-md-3">
+                <a href="https://github.com/bruna41/GenerationBrasil_ProjetoPOO" target="_blank"><img
+                        src="https://blog-geek-midia.s3.amazonaws.com/wp-content/uploads/2020/07/26213557/pngwing.com_.png"
+                        class="card-img-top" alt="logo Java"></a>
+                <div class="border-0">
+                    <div class="card-body cardPS">
+                        <a class="link" href="https://github.com/bruna41/GenerationBrasil_ProjetoPOO" target="_blank">
+                            <h5 class="card-title text-center subtitulo link">ProjetoPOO Generation Brasil</h5>
+                        </a>
+                        <p class="card-text text-center text-black">Primeiro trabalho em equipe do Bootcamp.
+                            Desenvolvemos um sistema de controle de acesso de um condomínio. Equipe muito empática e
+                            harmônica. <b>Tecnologias:</b> Java, Eclipse, Git, GitHub.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="col-md-3">
+                <a href="https://medium.com/@bruna41bergami" target="_blank"><img
+                        src="https://mdback.mstatic.com.br/courses/2/254cd6a45a6b4b708885d438bd35fe93.png"
+                        class="card-img-top" alt="lápis e papel"></a>
+                <div class="border-0">
+                    <div class="card-body cardPS">
+                        <a class="link" href="https://medium.com/@bruna41bergami" target="_blank">
+                            <h5 class="card-title text-center subtitulo link">Escritos</h5>
+                        </a>
+                        <p class="card-text text-center text-black">No período de cursinho pré-vestibular, fiz muitas
+                            redações e decidi publicar algumas, que realmente achei boas, no medium. Assim como, alguns
+                            poemas que escrevi.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="col-md-3">
+                <a href="desenhos.html" target="_blank"><img
+                        src="https://images.emojiterra.com/openmoji/v13.1/512px/270d-1f3fb.png" class="card-img-top"
+                        alt="mão segurando lápis preto"></a>
+                <div class="border-0">
+                    <div class="card-body cardPS">
+                        <a class="link" href="desenhos.html">
+                            <h5 class="card-title text-center subtitulo link">Desenhos</h5>
+                        </a>
+                        <p class="card-text text-center text-black">Gosto de me expressar por palavras e por imagens
+                            também.</p>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+    <br>
+    <!-- /Projetos -->
+
+    <!-- Rodapé -->
+    <hr class="hr">
+    <footer class="container">
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-md-12">
+                <img src="assets/IMG-20220715-WA0028.jpg" alt="imagem Bruna" width="75px" height="75px"
+                    class="img-fluid rounded-circle centralizarBruna">
+                <h4 class="text-center subtitulo">Desenvolvimento&Design</h4>
+                <p class="text-center text-black">
+                    Bruna Bergami &copy;
+                </p>
             </div>
         </div>
-        <!-- /Rodapé -->
+    </footer>
+    <!-- /Rodapé -->
 
-        <script src="vitrine.js"></script>
+    <script src="vitrine.js"></script>
+    <script src="https://use.fontawesome.com/0bc44fcd32.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
-
-<!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
 
 </html>
