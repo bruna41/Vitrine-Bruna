@@ -93,7 +93,7 @@ body::-webkit-scrollbar-thumb {
     border: 2px rgb(245, 138, 138);
     border-radius: 0.25rem;
     border-style: outset;
-    transition: 0.8s;
+    transition: 1s;
     padding: 2px;
 }
 
