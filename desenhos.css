@@ -40,7 +40,8 @@ body::-webkit-scrollbar-thumb {
     margin-right: auto;
     max-width: 285px;
     max-height: 285px;
-    cursor: pointer;
+    border: solid rgb(82, 52, 112);
+    cursor: zoom-in;
 }
 .expandir {
     position: relative;
@@ -55,4 +56,10 @@ body::-webkit-scrollbar-thumb {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5px;
+}
+
+@media (max-width: 600px) {
+    .expandir {
+        transform: scale(1.2);
+    }
 }
