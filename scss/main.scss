@@ -1,1 +1,245 @@
-@import 'index';
+@import 'desenhos';
+
+body {
+    margin: 0px;
+    padding: 0px;
+
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: rgb(70, 12, 70);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: rgb(245, 138, 138);
+        border-radius: 10px;
+        border: 2px solid rgb(245, 138, 138);
+    }
+}
+
+.dark {
+    background-color: black;
+}
+
+.leight {
+    background-color: rgb(253, 249, 249);
+    font-weight: bold;
+}
+
+.logo {
+    color: rgb(70, 12, 70);
+    font-style: italic;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px 300px 0px 15px;
+}
+
+.menuzinho {
+    border: 3px rgb(122, 12, 122);
+    border-radius: 10px;
+    border-style: inset;
+    width: 10px;
+    height: 15px;
+}
+
+.menuzinhoDark {
+    background-color: black;
+}
+
+.menuzinhoLeight {
+    background-color: rgb(253, 249, 249);
+}
+
+.linksMenuDark {
+    text-decoration: none;
+    color: white !important;
+
+    &:hover {
+        color: #7164b9 !important;
+    }
+}
+
+.linksMenuLeight {
+    text-decoration: none;
+    color: #000 !important;
+
+    &:hover {
+        color: #7164b9 !important;
+    }
+}
+
+.contatos {
+    margin-bottom: 5px;
+
+    .linksC {
+        text-decoration: none;
+        color: #000;
+
+        &:hover {
+            color: #2c1d1d;
+        }
+    }
+
+    .iconsMenu {
+        vertical-align: unset;
+        padding-left: 7px;
+        color: #3a326a;
+    }
+}
+
+.fixar {
+    //receber dark/leight
+    position: fixed;
+    top: 40px;
+    margin-top: -2.5em;
+    padding-top: 0px;
+}
+
+.sun {
+    cursor: pointer;
+    color: rgb(79, 67, 10);
+
+    &:hover {
+        color: rgb(248, 244, 31);
+    }
+}
+
+.ativoSun {
+    color: rgb(242, 239, 37);
+}
+
+.moon {
+    cursor: pointer;
+    color: rgb(10, 9, 112);
+
+    &:hover {
+        color: rgb(49, 47, 194);
+    }
+}
+
+.ativoMoon {
+    color: rgb(43, 40, 226);
+}
+
+.dropdown-menu {
+    min-width: 7rem !important;
+
+    &[data-bs-popper] {
+        top: 68% !important;
+        left: 20px !important;
+        width: 30px;
+        background-color: #DA717A;
+    }
+}
+
+
+#sobreMim {
+    padding-top: 70px;
+}
+
+.titulo {
+    color: rgb(19, 16, 201);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.subtitulo {
+    color: rgb(173, 58, 173);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.foto {
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+}
+
+.btnLeiaMaisDark {
+    float: right;
+    background-color: black;
+    color: white;
+    border: 2px rgb(238, 9, 9);
+    border-radius: 0.25rem;
+    border-style: inset;
+    margin: 5px 60px;
+
+}
+
+.btnLeiaMaisLeight {
+    float: right;
+    background-color: white;
+    color: white;
+    border: 2px rgb(238, 9, 9);
+    border-radius: 0.25rem;
+    border-style: inset;
+    margin: 5px 60px;
+
+}
+
+.logos {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80px;
+    max-height: 250px;
+    width: auto;
+    height: auto;
+}
+
+.paragrafosDark {
+    color: white;
+}
+
+.paragrafosLeight {
+    color: #000;
+}
+
+.link {
+    text-decoration: none;
+
+    &:hover {
+        color: rgb(245, 138, 138);
+    }
+}
+
+#leiaMais {
+    display: none;
+}
+
+#leiaMais2 {
+    display: none;
+}
+
+#leiaMais3 {
+    display: none;
+}
+
+#leiaMais4 {
+    display: none;
+}
+
+.hrDark {
+    color: rgb(196, 10, 10);
+}
+
+.hrLeight {
+    height: 2px !important;
+    color: rgb(13, 11, 138);
+}
+
+.copyDark {
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .logo {
+        display: none;
+    }
+
+    .menuzinho {
+        margin: 20px;
+    }
+}
