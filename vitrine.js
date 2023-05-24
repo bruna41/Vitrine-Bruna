@@ -61,3 +61,23 @@ function mais4() {
         btn.innerHTML = 'Esconder'
     }
 }
+
+// atualizar idade
+let idadeSpan = document.getElementById('idade')
+let data = new Date()
+let dia = String(data.getDate())
+let mes = String(data.getMonth() + 1)
+let hora = String(data.getHours())
+let minutos = String(data.getMinutes())
+let segundos = String(data.getSeconds())
+
+const updateIdade = () => {
+    idadeSpan.innerHTML = idade
+}
+
+let idade = 24
+    while (dia == 23 && mes == 5 && hora == 10 && minutos == 47 && segundos == 1) {
+        // idade += 1
+        // updateIdade()
+        console.log(idade)
+    }

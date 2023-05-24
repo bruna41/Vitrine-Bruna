@@ -138,22 +138,3 @@ body::-webkit-scrollbar-thumb {
     width: auto;
     height: auto;
 }
-
-.cardPS {
-    background-color: white;
-}
-
-.link {
-    text-decoration: none;
-}
-
-.link:hover {
-    color: rgb(230, 67, 67);
-}
-
-.centralizarBruna {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 5px;
-}

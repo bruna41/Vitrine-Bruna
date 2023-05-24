@@ -6,56 +6,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
-    <link rel="shortcut icon" href="assets/butterfly.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="scss/main.css" media="screen">
+    <link rel="shortcut icon" href="assets/butterfly.png" type="image/x-icon" />
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Vitrine-Bruna</title>
 </head>
 
-<body class="body">
+<body class="dark">
     <!-- Menu -->
     <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid fixar">
+        <div class="container-fluid fixar dark">
             <a href="#">
                 <img class="px-3 py-2" src="assets/butterfly.png" alt="logo de Borboleta" width="90px"></a>
             <h1 class="logo">VB</h1>
-            <button class="menuzinho" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="menuzinho menuzinhoDark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
             </button>
             <div class="collapse navbar-collapse container" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item m-3 mx-3">
-                        <a class="nav-link active text-light" aria-current="page" href="#sobreMim">Sobre mim</a>
+                        <a class="nav-link active linksMenuDark" aria-current="page" href="#sobreMim">Sobre mim</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light m-3" href="#projetos">Projetos</a>
+                        <a class="nav-link linksMenuDark m-3" href="#projetos">Projetos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light m-3" href="#profissionalAcademico">Profissional&Acadêmico</a>
+                        <a class="nav-link linksMenuDark m-3" href="#profissionalAcademico">Profissional&Acadêmico</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-light m-3" href="#" id="navbarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle linksMenuDark m-3" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Contatos
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="https://www.linkedin.com/in/bruna-bergami"
-                                    target="_blank">Linkedin</a></li>
-                            <li><a class="dropdown-item" href="https://github.com/bruna41" target="_blank">GitHub</a>
+                            <li class="contatos"><i class="fa fa-envelope iconsMenu" aria-hidden="true"></i>
+                                <a class="linksC" href="mailto:bruna41bergami@gmail.com">E-mail</a>
                             </li>
-                            <li><a class="dropdown-item" href="https://www.instagram.com/bruna.bergami.1/"
-                                    target="_blank">Instagram</a></li>
-                            <li>
-                                <hr class="dropdown-divider hr">
+                            <li class="contatos"><i class="fa fa-github-square iconsMenu" aria-hidden="true"></i>
+                                <a class="linksC" href="https://github.com/bruna41" target="_blank">GitHub</a>
                             </li>
-                            <li class="text-center">Me mande um e-mail: <b>bruna41bergami@gmail.com</b></li>
+                            <li class="contatos"><i class="fa fa-linkedin-square iconsMenu" aria-hidden="true"></i>
+                                <a class="linksC" href="https://www.linkedin.com/in/bruna-bergami"
+                                    target="_blank">Linkedin</a>
+                            </li>
+                            <li class="contatos"><i class="fa fa-instagram iconsMenu" aria-hidden="true"></i>
+                                <a class="linksC" href="https://www.instagram.com/bruna.bergami.1/"
+                                    target="_blank">Instagram</a>
+                            </li>
                         </ul>
                     </li>
                 </ul>
                 <div class="d-flex px-5">
-                    <a href="bgBranco.html"><i class="bi bi-brightness-high-fill sun"></i></a>
+                    <i class="bi bi-moon-stars moon ativoMoon"></i>
+                    <i class="bi bi-brightness-high-fill sun"></i>
                 </div>
             </div>
         </div>
@@ -70,27 +77,24 @@
                 <div class="row d-flex justify-content-center">
                     <div class="col-md-10">
                         <div class="border-0">
-                            <div class="card-bodys">
-                                <h5 class="card-title subtitulo text-center">Quem sou eu?</h5>
-                                <p class="card-text text-light">Me chamo Bruna, tenho 23 anos. Tive AVCs com 10 anos,
-                                    quase morri e isso me deixou sequelas motoras. Reaprendi a fazer tudo, falar,
+                            <div class="card-bodyDark">
+                                <img aria-hidden="true" src="assets/Annotation 2023-05-19 154741.png"
+                                    alt="imagem Bruna" class="rounded-circle foto">
+                                <p class="card-text paragrafosDark">Me chamo Bruna, tenho <span id="idade">0</span> anos. Tive AVCs
+                                    com 10 anos e quase morri. Isso me deixou sequelas motoras, reaprendi a fazer tudo, falar,
                                     escrever, tudo. Essa experiência (que vivo todos os dias) me tornou uma mulher sem
-                                    medo do novo, sem medo de viver.<br>
-                                    Exercitando todos os dias a resiliência, hoje
+                                    medo do novo, sem <span style="margin-left: -10px;">medo</span> de viver. Exercitando todos os dias a <span style="margin-left: -21px;">resiliência</span>, hoje
                                     consigo falar e me comunicar muito bem, amo escrever e desenhar, gosto de lidar com
                                     pessoas e sentimentos, adoro uma boa conversa, gosto de<span
-                                        id="pontinhos">...</span><span id="leiaMais"> aprender cada vez mais.
-                                        Gosto muito de palavras, admiro
-                                        bastante a força que têm, gosto de ler, ouvir música e, recentemente, descobri
-                                        uma paixão pela programação e, mais ainda, por codar ouvindo música.<br>
-                                        Escolhi o tema de borboleta no meu site, porque me fascina a metamorfose, as
-                                        asas, ter asas e voar. Sempre gostei muito de borboletas. E o roxo,
-                                        principalmente, me remete a uma força delicada. É uma das minhas cores
-                                        preferidas.<br>
-                                        Este foi um breve resumo de quem eu sou e o que gosto. Obrigada por ler até
-                                        aqui!</span>
+                                    id="pontinhos">...</span><span id="leiaMais"> aprender cada vez mais.
+                                    Gosto muito de palavras, admiro bastante a força que têm, gosto de ler, ouvir música e, recentemente, descobri uma paixão pela programação e, mais ainda, por codar ouvindo música.<br>
+                                    Escolhi o tema de borboleta no meu site, porque me fascina a metamorfose, as
+                                    asas, ter asas e voar. Sempre gostei muito de borboletas. E o roxo,
+                                    principalmente, me remete a uma força delicada. É uma das minhas cores
+                                    preferidas.<br> ste foi um breve resumo de quem eu sou e o que gosto. Obrigada por ler até
+                                    aqui!</span>
                                 </p>
-                                <button class="text-light" onclick="mais()" id="btnLeiaMais">Leia Mais</button>
+                                <button class="btnLeiaMaisDark" onclick="mais()" id="btnLeiaMais">Leia Mais</button>
                             </div>
                         </div>
                     </div>
@@ -101,33 +105,30 @@
                 <div class="row d-flex justify-content-center">
                     <div class="col-md-10">
                         <div class="border-0 mt-1">
-                            <div class="card-bodys">
-                                <h5 class="card-title subtitulo text-center">Histórico</h5>
-                                <h6 class="card-subtitle mb-2 subtitulo text-center">Profissional/Acadêmico</h6>
-                                <p class="card-text text-light">Sempre procurei uma carreira que realmente gostasse e
+                            <div class="card-bodyDark">
+                                <h6 class="card-subtitle mb-2 subtitulo text-center">Histórico Profissional/Acadêmico</h6>
+                                <p class="card-text paragrafosDark">Sempre procurei uma carreira que realmente gostasse e
                                     quisesse me dedicar, isso aumentou meu amor pelo aprendizado, já que naveguei por
                                     várias áreas, estudando. Cheguei a fazer um curso de extensão em psicanálise, que me
                                     ajudou a trabalhar meu lado empático, minha comunicação e autoconhecimento. E um de
                                     letras, gosto muito de escrever e por minhas ideias no papel.<br>
                                     No começo de 2021, minha mãe me indicou um curso de<span
-                                        id="pontinhos2">...</span><span id="leiaMais2"> introdução à programação em
-                                        Java, foi assim que eu me apaixonei pela área e decidi me dedicar 100% à
-                                        programação.<br>
-                                        Além disso, comecei um curso em Javascript, conheço HTML
-                                        e CSS, e sou formada, como Desenvolvedora Web Java Jr Full Stack, no Bootcamp da
-                                        Generation Brasil, onde pode crescer nos conhecimentos técnicos, como
-                                        aprofundamento
-                                        na linguagem Java, SQL básico, aprendi frameworks como Spring Boot e Angular.
-                                        <br>
-                                        Também pude desenvolver habilidades comportamentais,
-                                        como perda da timidez, autoconfiança, trabalho em equipe e melhorar o
-                                        autoconhecimento. Finalizei, recentemente, um curso básico em React e retomei o
-                                        curso de JavaScript, aprendendo Node.js, aprofundando em Bootstrap e Angular 9.
-                                        Sigo estudando e, no momento, estou empregada pela Capgemini Brasil S/A, onde
-                                        pretendo crescer profissionalmente e como pessoa, construindo uma longa
-                                        trajetória de contribuição mútua.</span>
+                                    id="pontinhos2">...</span><span id="leiaMais2"> introdução à programação em
+                                    Java, foi assim que eu me apaixonei pela área e decidi me dedicar 100% à
+                                    programação.<br>Além disso, comecei um curso em Javascript, conheço HTML
+                                    e CSS, e sou formada, como Desenvolvedora Web Java Jr Full Stack, no Bootcamp da
+                                    Generation Brasil, onde pode crescer nos conhecimentos técnicos, como
+                                    aprofundamento
+                                    na linguagem Java, SQL básico, aprendi frameworks como Spring Boot e Angular.
+                                    <br>Também pude desenvolver habilidades comportamentais,
+                                    como perda da timidez, autoconfiança, trabalho em equipe e melhorar o
+                                    autoconhecimento. Finalizei, recentemente, um curso básico em React e retomei o
+                                    curso de JavaScript, aprendendo Node.js, aprofundando em Bootstrap e Angular 9.
+                                    Sigo estudando e, no momento, estou empregada pela Capgemini Brasil S/A, onde
+                                    pretendo crescer profissionalmente e como pessoa, construindo uma longa
+                                    trajetória de contribuição mútua.</span>
                                 </p>
-                                <button class="text-light" onclick="mais2()" id="btnLeiaMais2">Leia Mais</button>
+                                <button class="btnLeiaMaisDark" onclick="mais2()" id="btnLeiaMais2">Leia Mais</button>
                             </div>
                         </div>
                     </div>
@@ -145,12 +146,12 @@
                 <a href="https://www.capgemini.com/br-pt/" target="_blank"><img src="assets/Capgemini-Emblem.png"
                         class="card-img-top" alt="logo Capgemini"></a>
                 <div class="border-0">
-                    <div class="card-body cardPS">
+                    <div class="card-body">
                         <a class="link" href="https://www.capgemini.com/br-pt/" target="_blank">
                             <h5 class="card-title text-center subtitulo link">Capgemini Brasil S/A</h5>
                         </a>
                         <h6 class="card-subtitle mb-2 subtitulo text-center">07/2022 - o momento</h6>
-                        <p class="card-text text-center text-light">A Capgemini é uma multinacional francesa que está
+                        <p class="card-text text-center paragrafosDark">A Capgemini é uma multinacional francesa que está
                             entre os maiores fornecedores de serviços de consultoria, tecnologia e outsourcing do mundo.
                         </p>
                     </div>
@@ -161,12 +162,12 @@
                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReBSkC5VuHdyllifp-0U6EeLIIKCW48_SCM0Qz_VzqqufSIFqHPlKCq_HuZUfTFPzXj2E&usqp=CAU"
                         class="card-img-top" alt="logo Generation Brasil"></a>
                 <div class="border-0">
-                    <div class="card-body cardPS">
+                    <div class="card-body">
                         <a class="link" href="https://www.instagram.com/generationbrasil/" target="_blank">
                             <h5 class="card-title text-center subtitulo link">Generation Brasil</h5>
                         </a>
                         <h6 class="card-subtitle mb-2 subtitulo text-center">10/2021-02/2022</h6>
-                        <p class="card-text text-center text-light">No final de 2021, tive a oportunidade de participar
+                        <p class="card-text text-center paragrafosDark">No final de 2021, tive a oportunidade de participar
                             do processo seletivo deste Bootcamp de 12 semanas muito importante no meu desenvolvimento
                             pessoal e<span id="pontinhos3">...</span><span id="leiaMais3"> profissional. Tive uma ótima
                                 experiência de convivência, aprendi a trabalhar em equipe com desenvolvimento Full
@@ -183,12 +184,12 @@
                         src="https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_5aaa964e5c3eab7b8781fe0b362efc1a/udemy-business.png"
                         class="card-img-top" alt="logo Udemy"></a>
                 <div class="border-0">
-                    <div class="card-body cardPS">
+                    <div class="card-body">
                         <a class="link" href="https://www.udemy.com/" target="_blank">
                             <h5 class="card-title text-center subtitulo link">Udemy</h5>
                         </a>
                         <h6 class="card-subtitle mb-2 subtitulo text-center">Em andamento</h6>
-                        <p class="card-text text-center text-light">Em agosto de 2021, comecei um curso online pela
+                        <p class="card-text text-center paragrafosDark">Em agosto de 2021, comecei um curso online pela
                             Udemy em JavaScript, HTML, CSS e me apaixonei ainda mais pelo mundo Tech. Me identifico com
                             front-end, tenho mais facilidade e afinidade, mas gosto bastante de desenvolver o back-end.
                         </p>
@@ -200,12 +201,12 @@
                         src="http://etecperuibe.com.br/wp-content/uploads/2021/02/Logo.png" class="card-img-top"
                         alt="logo CPS"></a>
                 <div class="border-0">
-                    <div class="card-body cardPS">
+                    <div class="card-body">
                         <a class="link" href="https://www.cps.sp.gov.br/" target="_blank">
                             <h5 class="card-title text-center subtitulo link">Centro Paula Souza</h5>
                         </a>
                         <h6 class="card-subtitle mb-2 subtitulo text-center">05/2021-10/2021</h6>
-                        <p class="card-text text-center text-light">Foi com esse curso introdutório em Java que me
+                        <p class="card-text text-center paragrafosDark">Foi com esse curso introdutório em Java que me
                             encontrei na programação. Me apaixonei pela área e pela linguagem.</p>
                     </div>
                 </div>
@@ -215,12 +216,12 @@
                         src="https://uspdigital.usp.br/apolo/images/Apolo_png.png" class="card-img-top"
                         alt="logo Apolo-USP"></a>
                 <div class="border-0">
-                    <div class="card-body cardPS">
+                    <div class="card-body">
                         <a class="link" href="https://uspdigital.usp.br/apolo/" target="_blank">
                             <h5 class="card-title text-center subtitulo link">Apolo-USP</h5>
                         </a>
                         <h6 class="card-subtitle mb-2 subtitulo text-center">04/2021</h6>
-                        <p class="card-text text-center text-light">Nesse curso de extensão, gratuito, de difusão em
+                        <p class="card-text text-center paragrafosDark">Nesse curso de extensão, gratuito, de difusão em
                             linguística pude desenvolver minha escrita, me apaixonando ainda mais pelas palavras, me
                             ajudou na minha organização de ideias. <a class="link"
                                 href="https://medium.com/@bruna41bergami/mudan%C3%A7a-de-perspectiva-c118072d3115">Uma
@@ -233,12 +234,12 @@
                         src="https://uspdigital.usp.br/apolo/images/Apolo_png.png" class="card-img-top"
                         alt="logo Apolo-USP"></a>
                 <div class="border-0">
-                    <div class="card-body cardPS">
+                    <div class="card-body">
                         <a class="link" href="https://uspdigital.usp.br/apolo/" target="_blank">
                             <h5 class="card-title text-center subtitulo link">Apolo-USP</h5>
                         </a>
                         <h6 class="card-subtitle mb-2 subtitulo text-center">02/2021-06/2021</h6>
-                        <p class="card-text text-center text-light">Fiz um curso de extensão, gratuitamente, de difusão
+                        <p class="card-text text-center paragrafosDark">Fiz um curso de extensão, gratuitamente, de difusão
                             em psicanálise. Me apaixonei ainda mais por pessoas, aperfeiçoei minha empatia e
                             autoconhecimento.</p>
                     </div>
@@ -249,12 +250,12 @@
                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThJhQmY6aoiRAUjqoI4GOmWg_F9raJNl22usamvO_klk6x5_OkMgKDRKd8LuWn9_olHUw&usqp=CAU"
                         class="card-img-top" alt="logo Projeto Raiz"></a>
                 <div class="border-0">
-                    <div class="card-body cardPS">
+                    <div class="card-body">
                         <a class="link" href="https://www.instagram.com/projeto.raiz/" target="_blank">
                             <h5 class="card-title text-center subtitulo link">Projeto Raiz</h5>
                         </a>
                         <h6 class="card-subtitle mb-2 subtitulo text-center">2018-2020</h6>
-                        <p class="card-text text-center text-light">Logo após me formar no ensino médio, comecei esse
+                        <p class="card-text text-center paragrafosDark">Logo após me formar no ensino médio, comecei esse
                             cursinho pré-vestibular popular. Aqui pude me entender e me aceitar no pessoal, como também
                             descobrir meu amor pelo aprendizado, por pessoas, por escrever, pelas palavras e causas
                             sociais. Queria fazer faculdade de psicologia ou letras.</p>
@@ -266,12 +267,12 @@
                         src="http://10demaio.com.br/wp-content/uploads/2015/02/logo3.png" class="card-img-top"
                         alt="logo Colégio 10 de Maio"></a>
                 <div class="border-0">
-                    <div class="card-body cardPS">
+                    <div class="card-body">
                         <a class="link" href="https://10demaio.com.br/" target="_blank">
                             <h5 class="card-title text-center subtitulo link">Colégio 10 de Maio</h5>
                         </a>
                         <h6 class="card-subtitle mb-2 subtitulo text-center">até 2017</h6>
-                        <p class="card-text text-center text-light">Escola onde me formei no ensino médio. Aqui, passei
+                        <p class="card-text text-center paragrafosDark">Escola onde me formei no ensino médio. Aqui, passei
                             minha infância e adolescentes inteira. Queria fazer faculdade de editoração, sempre gostei
                             de português, literatura e ler.</p>
                     </div>
@@ -289,11 +290,11 @@
                 <a href="#"><img src="https://cdn.pixabay.com/photo/2014/04/03/10/22/butterfly-310238_960_720.png"
                         class="card-img-top" alt="logo Borboleta"> </a>
                 <div class="border-0">
-                    <div class="card-body cardPS">
+                    <div class="card-body">
                         <a class="link" href="#">
                             <h5 class="card-title text-center subtitulo link">Vitrine-Bruna</h5>
                         </a>
-                        <p class="card-text text-center text-light">Decidi desenvolver esse "site-currículo" para
+                        <p class="card-text text-center paragrafosDark">Decidi desenvolver esse "site-currículo" para
                             treinar minhas habilidades no front-end e poder contar melhor minhas experiências. De forma
                             mais detalhada do que num currículo convencional. <b>Tecnologias:</b> HTLM, CSS, JavaScript,
                             Bootstrap, VSCode, Git, GitHub.</p>
@@ -304,11 +305,11 @@
                 <a href="https://educatea.netlify.app/#/home" target="_blank"><img src="assets/OWlilJM.png"
                         class="card-img-top" alt="logo EducaTEA"></a>
                 <div class="border-0">
-                    <div class="card-body cardPS">
+                    <div class="card-body">
                         <a class="link" href="https://educatea.netlify.app/#/home" target="_blank">
                             <h5 class="card-title text-center subtitulo link">EducaTEA</h5>
                         </a>
-                        <p class="card-text text-center text-light">Projeto Integrador do Bootcamp. Trabalho em equipe,
+                        <p class="card-text text-center paragrafosDark">Projeto Integrador do Bootcamp. Trabalho em equipe,
                             uma rede social com o objetivo de auxiliar, com trocas de informações e perguntas entre
                             professores, pais, responsáveis e interessados, no acolhimento e qualidade<span
                                 id="pontinhos4">... </span><span id="leiaMais4"> de vida de crianças/adolescentes do
@@ -325,11 +326,11 @@
                         src="https://images.emojiterra.com/google/android-11/512px/1f914.png" class="card-img-top"
                         alt="logo BlogPessoal"></a>
                 <div class="border-0">
-                    <div class="card-body cardPS">
+                    <div class="card-body">
                         <a class="link" href="https://blogbruna.netlify.app/#/entrar" target="_blank">
                             <h5 class="card-title text-center subtitulo link">Blog Pessoal</h5>
                         </a>
-                        <p class="card-text text-center text-light">Aplicação desenvolvida individualmente, no Bootcamp,
+                        <p class="card-text text-center paragrafosDark">Aplicação desenvolvida individualmente, no Bootcamp,
                             a fim de ensinar as tecnologias para aplicá-las no Projeto Integrador do Bootcamp.
                             <b>Tecnologias:</b> Java, MySQL, PostgreSQL, Spring Boot, Security (Basic64), Eclipse,
                             Heroku, Bootstrap, HTML, CSS, Angular, TypeScript, VSCode, Netlify, Git, GitHub.
@@ -342,11 +343,11 @@
                         src="https://i0.wp.com/static1.squarespace.com/static/5bfc2f03af20967c04dd3cb7/t/5c16d7c6032be42f6132f90e/1545000916921/TGLogo.png"
                         class="card-img-top" alt="logo Bootstrap-TokyoGhoul"></a>
                 <div class="border-0">
-                    <div class="card-body cardPS">
+                    <div class="card-body">
                         <a class="link" href="https://bruna41.github.io/Bootstrap-TokyoGhoul/" target="_blank">
                             <h5 class="card-title text-center subtitulo link">Bootstrap-TokyoGhoul</h5>
                         </a>
-                        <p class="card-text text-center text-light">Atividade individual com tema livre, desenvolvida no
+                        <p class="card-text text-center paragrafosDark">Atividade individual com tema livre, desenvolvida no
                             Bootcamp para aprender e treinar a ferramenta. <b>Tecnologias:</b> Bootstrap, VSCode, Git,
                             GitHub.</p>
                     </div>
@@ -357,11 +358,11 @@
                         src="https://blog-geek-midia.s3.amazonaws.com/wp-content/uploads/2020/07/26213557/pngwing.com_.png"
                         class="card-img-top" alt="logo Java"></a>
                 <div class="border-0">
-                    <div class="card-body cardPS">
+                    <div class="card-body">
                         <a class="link" href="https://github.com/bruna41/GenerationBrasil_ProjetoPOO" target="_blank">
                             <h5 class="card-title text-center subtitulo link">ProjetoPOO Generation Brasil</h5>
                         </a>
-                        <p class="card-text text-center text-light">Primeiro trabalho em equipe do Bootcamp.
+                        <p class="card-text text-center paragrafosDark">Primeiro trabalho em equipe do Bootcamp.
                             Desenvolvemos um sistema de controle de acesso de um condomínio. Equipe muito empática e
                             harmônica. <b>Tecnologias:</b> Java, Eclipse, Git, GitHub.</p>
                     </div>
@@ -372,11 +373,11 @@
                         src="https://mdback.mstatic.com.br/courses/2/254cd6a45a6b4b708885d438bd35fe93.png"
                         class="card-img-top" alt="lápis e papel"></a>
                 <div class="border-0">
-                    <div class="card-body cardPS">
+                    <div class="card-body">
                         <a class="link" href="https://medium.com/@bruna41bergami" target="_blank">
                             <h5 class="card-title text-center subtitulo link">Escritos</h5>
                         </a>
-                        <p class="card-text text-center text-light">No período de cursinho pré-vestibular, fiz muitas
+                        <p class="card-text text-center paragrafosDark">No período de cursinho pré-vestibular, fiz muitas
                             redações e decidi publicar algumas, que realmente achei boas, no medium. Assim como, alguns
                             poemas que escrevi.</p>
                     </div>
@@ -387,11 +388,11 @@
                         src="https://images.emojiterra.com/openmoji/v13.1/512px/270d-1f3fb.png" class="card-img-top"
                         alt="mão segurando lápis preto"></a>
                 <div class="border-0">
-                    <div class="card-body cardPS">
+                    <div class="card-body">
                         <a class="link" href="desenhos.html">
                             <h5 class="card-title text-center subtitulo link">Desenhos</h5>
                         </a>
-                        <p class="card-text text-center text-light">Gosto de me expressar por palavras e por imagens
+                        <p class="card-text text-center paragrafosDark">Gosto de me expressar por palavras e por imagens
                             também.</p>
                     </div>
                 </div>
@@ -402,18 +403,11 @@
     <!-- /Projetos -->
 
     <!-- Rodapé -->
-    <hr class="hr">
+    <hr class="hrDark">
     <footer class="container">
-        <div class="row d-flex justify-content-center align-items-center">
-            <div class="col-md-12">
-                <img src="assets/IMG-20220715-WA0028.jpg" alt="imagem Bruna" width="75px" height="75px"
-                    class="img-fluid rounded-circle centralizarBruna">
-                <h4 class="text-center subtitulo">Desenvolvimento&Design</h4>
-                <p class="text-center text-light">
-                    Bruna Bergami &copy;
-                </p>
-            </div>
-        </div>
+        <p class="text-center mt-1 copyDark">
+            Bruna Bergami &copy;
+        </p>
     </footer>
     <!-- /Rodapé -->
 
