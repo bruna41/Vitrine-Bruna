@@ -13,3 +13,8 @@ function removeExpansao() {
         fotoDesenho.classList.remove('expandir')
     })
 }
+
+// atualizar corpy
+let data = new Date
+let anoAtual = data.getFullYear()
+let corpy = document.getElementById('corpy').textContent = anoAtual

@@ -15,33 +15,37 @@
 <body class="dark">
     <!-- Menu -->
     <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid fixar dark">
+        <div id="fixar" class="container-fluid fixar dark">
             <a href="#">
                 <img class="px-3 py-2" src="assets/butterfly.png" alt="logo de Borboleta" width="90px"></a>
             <h1 class="logo">VB</h1>
-            <button class="menuzinho menuzinhoDark" type="button" data-bs-toggle="collapse"
+            <button id="menuzinho" class="menuzinho menuzinhoDark" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
             </button>
             <div class="collapse navbar-collapse container" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item m-3 mx-3">
-                        <a class="nav-link active linksMenuDark" aria-current="page" href="#sobreMim">Sobre mim</a>
+                        <a class="nav-link linksMenu linksMenuDark" aria-current="page" href="#sobreMim">Sobre mim</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link linksMenuDark m-3" href="#projetos">Projetos</a>
+                        <a class="nav-link linksMenu linksMenuDark m-3" href="#projetos">Projetos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link linksMenuDark m-3" href="#profissionalAcademico">Profissional&Acadêmico</a>
+                        <a class="nav-link linksMenu linksMenuDark m-3" href="#profissionalAcademico">Profissional&Acadêmico</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle linksMenuDark m-3" href="#" id="navbarDropdown" role="button"
+                        <a id="navbarDropdown" class="nav-link dropdown-toggle linksMenu linksMenuDark m-3" href="#" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Contatos
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li class="contatos"><i class="fa fa-envelope iconsMenu" aria-hidden="true"></i>
                                 <a class="linksC" href="mailto:bruna41bergami@gmail.com">E-mail</a>
+                            </li>
+                            <li class="contatos"><i class="fa fa-instagram iconsMenu" aria-hidden="true"></i>
+                                <a class="linksC" href="https://www.instagram.com/bruna.bergami.1/"
+                                    target="_blank">Instagram</a>
                             </li>
                             <li class="contatos"><i class="fa fa-github-square iconsMenu" aria-hidden="true"></i>
                                 <a class="linksC" href="https://github.com/bruna41" target="_blank">GitHub</a>
@@ -50,16 +54,12 @@
                                 <a class="linksC" href="https://www.linkedin.com/in/bruna-bergami"
                                     target="_blank">Linkedin</a>
                             </li>
-                            <li class="contatos"><i class="fa fa-instagram iconsMenu" aria-hidden="true"></i>
-                                <a class="linksC" href="https://www.instagram.com/bruna.bergami.1/"
-                                    target="_blank">Instagram</a>
-                            </li>
                         </ul>
                     </li>
                 </ul>
                 <div class="d-flex px-5">
-                    <i class="bi bi-moon-stars moon ativoMoon"></i>
-                    <i class="bi bi-brightness-high-fill sun"></i>
+                    <i id="lua" class="bi bi-moon-stars moon ativoMoon"></i>
+                    <i id="sol" class="bi bi-brightness-high-fill sun"></i>
                 </div>
             </div>
         </div>
@@ -75,26 +75,16 @@
                     <div class="col-md-10">
                         <img aria-hidden="true" src="assets/Annotation 2023-05-19 154741.png" alt="imagem Bruna"
                             class="rounded-circle foto">
-                        <p class="card-text paragrafosDark">Me chamo Bruna, tenho <span id="idade">24</span>
-                            anos. Tive AVCs com 10 anos e quase morri. Isso me deixou sequelas motoras, reaprendi a
-                            fazer tudo,
-                            falar, escrever, tudo. Essa experiência (que vivo todos os dias) me tornou uma mulher sem
-                            medo do novo, sem <span style="margin-left: -10px;">medo</span> de viver.
-                            Exercitando todos os dias a <span style="margin-left: -21px;">resiliência</span>,
-                            hoje consigo falar e me comunicar muito bem, amo escrever e desenhar, gosto de lidar com
-                            pessoas e sentimentos, adoro uma boa conversa, gosto de<span id="pontinhos">...</span><span
-                                id="leiaMais"> aprender cada vez mais. Gosto muito de palavras, admiro bastante a força
-                                que têm, gosto de ler, ouvir música e, recentemente, descobri uma paixão pela
-                                programação e, mais ainda, por
-                                codar ouvindo música.<br>
-                                Escolhi o tema de borboleta no meu site, porque me fascina a metamorfose, as
-                                asas, ter asas e voar. Sempre gostei muito de borboletas. E o roxo,
-                                principalmente, me remete a uma força delicada. É uma das minhas cores
-                                preferidas.<br> ste foi um breve resumo de quem eu sou e o que gosto. Obrigada
-                                por ler até
-                                aqui!</span>
+                        <p class="card-text paragrafos paragrafosDark">Meu nome é Bruna Bergami, tenho <span id="idade"></span>
+                        anos. A história que quero contar começa nos meus 10 anos, quando tive AVC. Isso me deixou com sequelas motoras e tive que reaprender a fazer tudo. Falar, escrever, comer, tudo. Hoje, ando com auxílio de muletas, uso cadeira de rodas em longas distâncias. Me comunico bem falando, apesar de algumas dificuldades.
+                        <br>
+                        Essa experiência de "renascimento", me tornou uma mulher sem medo do novo e de enfrentar desafios<span id="pontinhos">...</span><span id="leiaMais"> pelo caminho. Sempre exercitando a resiliência e buscando desenvolver a empátia, compaixão e altruísmo. Gosto de lidar com pessoas e sentimentos, adoro ter uma boa conversa e aprender cada vez mais. Admiro bastante a força das palavras, um dos motivos de ter me apaixonada por programação. Amo ler, ouvir música e, recentemente, descobri o quão maravilhoso é poder trabalhar ouvindo música.
+                        <br>
+                        Escolhi o tema de borboleta, porque me fascina a metamorfose desse ser, o fato de terem asas e voarem. Toda a beleza da existência delas, mesmo que curta. Sempre gostei muito de borboletas. E o roxo me remete a uma força delicada que, por sua vez, combina com borboletas, ao meu ver. É uma das minhas cores preferidas.
+                        <br>
+                        Bom, este foi um breve resumo de quem eu sou e o que gosto. Obrigada por ler até aqui! :)</span>
                         </p>
-                        <button class="btnLeiaMaisDark" onclick="mais()" id="btnLeiaMais">Leia Mais</button>
+                        <button id="btnLeiaMais" class="btnLeiaMaisDark" onclick="mais()">Leia Mais</button>
                     </div>
                 </div>
             </article>
@@ -103,30 +93,20 @@
                     <div class="col-md-10">
                         <h6 class="mb-2 subtitulo text-center">Histórico Profissional/Acadêmico
                         </h6>
-                        <p class="paragrafosDark">Sempre procurei uma carreira que realmente gostasse
-                            e quisesse me dedicar, isso aumentou meu amor pelo aprendizado, já que naveguei por
-                            várias áreas, estudando. Cheguei a fazer um curso de extensão em psicanálise, que me
-                            ajudou a trabalhar meu lado empático, minha comunicação e autoconhecimento. E um de
-                            letras, gosto muito de escrever e por minhas ideias no papel.<br>
-                            No começo de 2021, minha mãe me indicou um curso de<span id="pontinhos2">...</span><span
-                                id="leiaMais2"> introdução à programação em
-                                Java, foi assim que eu me apaixonei pela área e decidi me dedicar 100% à
-                                programação.<br>
-                                Além disso, comecei um curso em Javascript, conheço HTML
-                                e CSS, e sou formada, como Desenvolvedora Web Java Jr Full Stack, no Bootcamp da
-                                Generation Brasil, onde pode crescer nos conhecimentos técnicos, como
-                                aprofundamento
-                                na linguagem Java, SQL básico, aprendi frameworks como Spring Boot e Angular.
-                                <br>
-                                Também pude desenvolver habilidades comportamentais,
-                                como perda da timidez, autoconfiança, trabalho em equipe e melhorar o
-                                autoconhecimento. Finalizei, recentemente, um curso básico em React e retomei o
-                                curso de JavaScript, aprendendo Node.js, aprofundando em Bootstrap e Angular 9.
-                                Sigo estudando e, no momento, estou empregada pela Capgemini Brasil S/A, onde
-                                pretendo crescer profissionalmente e como pessoa, construindo uma longa
-                                trajetória de contribuição mútua.</span>
+                        <p class="paragrafos paragrafosDark">Sempre almejei uma carreira em uma área que realmente gostasse e isso aumentou meu amor pelo aprendizado, já que naveguei por diversas áreas em busca daquilo que me despestasse pleno interesse e satisfação.
+                        <br>
+                        Antes de me encontrar no mundo tech, fiz um curso de extensão em psicanálise, que me ajudou a trabalhar meu lado empático, minha comunicação e autoconhecimento. E um de letras, que me ajudou bastante na minha organização de ideias, além disso, gosto muito de escrever e por minhas ideias<span id="pontinhos2">...</span><span
+                        id="leiaMais2"> no papel.<br>
+                        Foi então que, no começo de 2021, minha mãe me indicou um curso de lógica de programação em Java, e, com ele, me apaixonei pela área e decidi me dedicar ao máximo.<br>
+                        Logo depois, comecei um curso em Javascript, onde conheci HTML, CSS, SASS, e pude praticar com front-end. Em sequência, fiz um bootcamp, de doze semanas, na Generation Brasil. Onde pude me aprofundar e aprender muito mais sobre Java, pude praticar e desenvolver projetos (com CRUD completo, security básica e front-end), além de aprimorar habilidades comportamentais, como interação, proatividade, autoconfiança, trabalho em equipe e melhorar o autoconhecimento. Me formei, em fevereiro de 2022, como Desenvolvedora Web Java Jr Full Stack.
+                        <br>
+                        Através dessa eperiência, tive a oportunidade ser empregada, em julho de 2022, pela Capgemini. Onde
+                        posso crescer profissionalmente, e como pessoa, todos os dias. Estou atuando como desenvolvedora front-end na equipe UI/UX do cliente SEFAZ. Aprendi e pratiquei muito trabalhando com HTML, SASS e JS. Assim como, métodologia SCRUM e trabalho em equipe.
+                        <br>
+                        Com essa oportunide de emprego, em fevereiro de 2023, consegui começar a faculdade, cursando Análise e Desenvolvimento de Sistemas. 
+                        </span>
                         </p>
-                        <button class="btnLeiaMaisDark" onclick="mais2()" id="btnLeiaMais2">Leia Mais</button>
+                        <button id="btnLeiaMais2" class="btnLeiaMaisDark" onclick="mais2()">Leia Mais</button>
                     </div>
                 </div>
             </article>
@@ -139,33 +119,36 @@
     <section class="container-fluid">
         <div class="row mt-4 d-flex justify-content-center">
             <article class="col-md-3 mb-4">
+                <a href="https://www.uninter.com/" target="_blank"><img src="assets/uninter.png"
+                        class="logos" alt="logo UNINTER"></a>
+                <a class="link" href="https://www.uninter.com/" target="_blank">
+                    <h5 class="text-center subtitulo link mt-2">UNINTER - Educação a Distância</h5>
+                </a>
+                <h6 class="mb-2 subtitulo text-center">02/2023 - o momento</h6>
+                <p class="text-center paragrafos paragrafosDark">Escolhi cursar Análise e Desenvolcimento de Sistemas na UNINTER, por que vi a oportunidade de um ensino de qualidade, flexibilidade e conforto.
+                </p>
+            </article>
+            <article class="col-md-3 mb-4">
                 <a href="https://www.capgemini.com/br-pt/" target="_blank"><img src="assets/Capgemini-Emblem.png"
                         class="logos" alt="logo Capgemini"></a>
                 <a class="link" href="https://www.capgemini.com/br-pt/" target="_blank">
                     <h5 class="text-center subtitulo link mt-1">Capgemini Brasil S/A</h5>
                 </a>
                 <h6 class="mb-2 subtitulo text-center">07/2022 - o momento</h6>
-                <p class="text-center text-light">A Capgemini é uma multinacional francesa que está
-                    entre os maiores fornecedores de serviços de consultoria, tecnologia e outsourcing do mundo.
+                <p class="text-center paragrafos paragrafosDark">Por meio do Bootcamp, pude ter a oportunidade de entrar para o time Capgemini. Tem sido um exelente ambiente de trabalho, com colegas ótimos para se<span id="pontinhos5">... </span><span id="leiaMais5">trabalhar todos os dias, além de um excelente plano de carreira. Cresci muito, profissionalmente, desde que entrei. Atualmente, atuo no cliente SEFAZ, equipe UI/UX. Faço o desenvolvimento do font-end, com HTML, SASS e JS. Em paralelo, estou me desenvolvento em C# .NET, a fim de ingressar no desenvolvimento mobile. </span><a class="text-danger" style="cursor: pointer;" onclick="mais5()" id="btnLeiaMais5"> Leia
+                    Mais</a>
                 </p>
-            </article>
+            </article>     
             <article class="col-md-3 mb-4">
                 <a href="https://www.instagram.com/generationbrasil/" target="_blank"><img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReBSkC5VuHdyllifp-0U6EeLIIKCW48_SCM0Qz_VzqqufSIFqHPlKCq_HuZUfTFPzXj2E&usqp=CAU"
-                        class="logos" alt="logo Generation Brasil"></a>
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReBSkC5VuHdyllifp-0U6EeLIIKCW48_SCM0Qz_VzqqufSIFqHPlKCq_HuZUfTFPzXj2E&usqp=CAU"
+                class="logos" alt="logo Generation Brasil"></a>
                 <a class="link" href="https://www.instagram.com/generationbrasil/" target="_blank">
                     <h5 class="text-center subtitulo link mt-1">Generation Brasil</h5>
                 </a>
                 <h6 class="mb-2 subtitulo text-center">10/2021-02/2022</h6>
-                <p class="text-center paragrafosDark">No final de 2021, tive a oportunidade de
-                    participar
-                    do processo seletivo deste Bootcamp de 12 semanas muito importante no meu desenvolvimento
-                    pessoal e<span id="pontinhos3">...</span><span id="leiaMais3"> profissional. Tive uma ótima
-                        experiência de convivência, aprendi a trabalhar em equipe com desenvolvimento Full
-                        Stack, melhorei minha comunicação e autoconfiança, além de mentalidade de crescimento,
-                        planejamento do futuro. Quero cursar uma faculdade na área.</span>
-                    <a class="text-danger" style="cursor: pointer;" onclick="mais3()" id="btnLeiaMais3">Leia
-                        Mais</a>
+                <p class="text-center paragrafos paragrafosDark">No final de 2021, tive a oportunidade de
+                participar do Bootcamp, de 12 semanas, Generation Brasil. Muito importante no meu desenvolvimento pessoal e<span id="pontinhos3">...<br></span><span id="leiaMais3"> profissional. Tive uma ótima experiência de convivência, aprendi a trabalhar em equipe, com desenvolvimento Full Stack, melhorei minha comunicação e autoconfiança. Além de mentalidade de crescimento e planejamento futuro. </span><a class="text-danger" style="cursor: pointer;" onclick="mais3()" id="btnLeiaMais3">Leia Mais</a>
                 </p>
             </article>
             <article class="col-md-3 mb-4">
@@ -175,9 +158,9 @@
                 <a class="link" href="https://www.udemy.com/" target="_blank">
                     <h5 class="text-center subtitulo link mt-1">Udemy</h5>
                 </a>
-                <h6 class="mb-2 subtitulo text-center">Em andamento</h6>
-                <p class="text-center paragrafosDark">Em agosto de 2021, comecei um curso online pela
-                    Udemy em JavaScript, HTML, CSS e me apaixonei ainda mais pelo mundo Tech. Me identifico com
+                <h6 class="mb-2 subtitulo text-center">08/2021-11/2021</h6>
+                <p class="text-center paragrafos paragrafosDark">Em agosto de 2021, comecei um curso online pela
+                    Udemy, em JavaScript, HTML, CSS e me apaixonei ainda mais pelo mundo Tech. Me identifiquei com
                     front-end, tenho mais facilidade e afinidade, mas gosto bastante de desenvolver o back-end.
                 </p>
             </article>
@@ -189,8 +172,8 @@
                     <h5 class="text-center subtitulo link mt-1">Centro Paula Souza</h5>
                 </a>
                 <h6 class="mb-2 subtitulo text-center">05/2021-10/2021</h6>
-                <p class="text-center paragrafosDark">Foi com esse curso introdutório em Java que me
-                    encontrei na programação. Me apaixonei pela área e pela linguagem.
+                <p class="text-center paragrafos paragrafosDark">Foi com esse curso, de lógica em Java, que me
+                encontrei na programação. Me apaixonei pela área e pela linguagem.
                 </p>
             </article>
             <article class="col-md-3 mb-4">
@@ -201,14 +184,13 @@
                     <h5 class="text-center subtitulo link mt-1">Apolo-USP</h5>
                 </a>
                 <h6 class="mb-2 subtitulo text-center">04/2021</h6>
-                <p class="text-center paragrafosDark">Nesse curso de extensão, gratuito, de difusão em
-                    linguística pude desenvolver minha escrita, me apaixonando ainda mais pelas palavras, me
-                    ajudou na minha organização de ideias. <a class="link"
-                        href="https://medium.com/@bruna41bergami/mudan%C3%A7a-de-perspectiva-c118072d3115">Uma
-                        das atividades feitas</a>
+                <p class="text-center paragrafos paragrafosDark">Nesse curso de extensão, gratuito, em
+                    linguística, pude desenvolver minha escrita, me apaixonando ainda mais pelas palavras. Me
+                    ajudou, principalmente, na organização de ideias. <a class="link" href="https://medium.com/@bruna41bergami/mudan%C3%A7a-de-perspectiva-c118072d3115">Uma
+                    das atividades feitas</a>
                 </p>
             </article>
-            <article class="col-md-3 mb-4">
+            <article class="col-md-4 mb-4">
                 <a href="https://uspdigital.usp.br/apolo/" target="_blank"><img
                         src="https://uspdigital.usp.br/apolo/images/Apolo_png.png" class="logos"
                         alt="logo Apolo-USP"></a>
@@ -216,10 +198,7 @@
                     <h5 class="text-center subtitulo link mt-1">Apolo-USP</h5>
                 </a>
                 <h6 class="mb-2 subtitulo text-center">02/2021-06/2021</h6>
-                <p class="text-center paragrafosDark">Fiz um curso de extensão, gratuitamente, de
-                    difusão
-                    em psicanálise. Me apaixonei ainda mais por pessoas, aperfeiçoei minha empatia e
-                    autoconhecimento.
+                <p class="text-center paragrafos paragrafosDark">Fiz um curso de extensão, gratuitamente, em psicanálise. Me apaixonei ainda mais por pessoas, aperfeiçoei minha empatia e autoconhecimento.
                 </p>
             </article>
             <article class="col-md-3 mb-4">
@@ -230,11 +209,9 @@
                     <h5 class="text-center subtitulo link mt-1">Projeto Raiz</h5>
                 </a>
                 <h6 class="mb-2 subtitulo text-center">2018-2020</h6>
-                <p class="text-center paragrafosDark">Logo após me formar no ensino médio, comecei
-                    esse
-                    cursinho pré-vestibular popular. Aqui pude me entender e me aceitar no pessoal, como também
-                    descobrir meu amor pelo aprendizado, por pessoas, por escrever, pelas palavras e causas
-                    sociais. Queria fazer faculdade de psicologia ou letras.
+                <p class="text-center paragrafos paragrafosDark">Logo após me formar no ensino médio, comecei
+                    esse cursinho pré-vestibular popular. Pude me entender e me aceitar no pessoal, além de
+                    descobrir meu amor pelo aprendizado, por pessoas, por escrever e pelas palavras. Quis cursar psicologia ou letras.
                 </p>
             </article>
             <article class="col-md-3 mb-4">
@@ -245,9 +222,8 @@
                     <h5 class="text-center subtitulo link mt-1">Colégio 10 de Maio</h5>
                 </a>
                 <h6 class="mb-2 subtitulo text-center">até 2017</h6>
-                <p class="text-center paragrafosDark">Escola onde me formei no ensino médio. Aqui,
-                    passei
-                    minha infância e adolescentes inteira. Queria fazer faculdade de editoração, sempre gostei
+                <p class="text-center paragrafos paragrafosDark">Escola onde me formei no ensino médio. Aqui,
+                    passei minha infância e adolescencia inteira. Queria fazer faculdade de editoração, na época, sempre gostei
                     de português, literatura e ler.
                 </p>
             </article>
@@ -265,10 +241,9 @@
                 <a class="link" href="#">
                     <h5 class="text-center subtitulo link mt-1">Vitrine-Bruna</h5>
                 </a>
-                <p class="text-center paragrafosDark">Decidi desenvolver esse "site-currículo" para
+                <p class="text-center paragrafos paragrafosDark">Decidi desenvolver esse "site-currículo" para
                     treinar minhas habilidades no front-end e poder contar melhor minhas experiências. De
-                    forma
-                    mais detalhada do que num currículo convencional. <b>Tecnologias:</b> HTLM, CSS,
+                    forma mais detalhada do que num currículo convencional. <b>Tecnologias:</b> HTLM, SASS,
                     JavaScript,
                     Bootstrap, VSCode, Git, GitHub.
                 </p>
@@ -279,17 +254,12 @@
                 <a class="link" href="https://educatea.netlify.app/#/home" target="_blank">
                     <h5 class="text-center subtitulo link mt-1">EducaTEA</h5>
                 </a>
-                <p class="text-center paragrafosDark">Projeto Integrador do Bootcamp. Trabalho em
-                    equipe,
-                    uma rede social com o objetivo de auxiliar, com trocas de informações e perguntas entre
+                <p class="text-center paragrafos paragrafosDark">Projeto Integrador do Bootcamp Generation. Trabalho em
+                    equipe, uma rede social com o objetivo de auxiliar, com trocas de informações e perguntas entre
                     professores, pais, responsáveis e interessados, no acolhimento e qualidade<span id="pontinhos4">...
-                    </span><span id="leiaMais4"> de vida de crianças/adolescentes do
-                        espectro autista. <b>Tecnologias:</b> Java, MySQL, PostgreSQL, Spring Boot, Security
-                        (Basic64), Eclipse, Heroku, Bootstrap, HTML, CSS, Angular, TypeScript, VSCode,
-                        Netlify,
-                        Git, GitHub. </span><a class="text-danger" style="cursor: pointer;" onclick="mais4()"
-                        id="btnLeiaMais4">Leia
-                        Mais</a>
+                    </span><span id="leiaMais4"> de vida de crianças/adolescentes do espectro autista. <b>Tecnologias:</b> Java, MySQL, PostgreSQL, Spring Boot, Security (Basic64), Eclipse, Heroku, Bootstrap, HTML, CSS, Angular, TypeScript, VSCode,
+                    Netlify, Git, GitHub. </span><a class="text-danger" style="cursor: pointer;" onclick="mais4()"
+                    id="btnLeiaMais4">Leia Mais</a>
                 </p>
             </article>
             <article class="col-md-3 mb-4">
@@ -299,9 +269,8 @@
                 <a class="link" href="https://blogbruna.netlify.app/#/entrar" target="_blank">
                     <h5 class="text-center subtitulo link mt-1">Blog Pessoal</h5>
                 </a>
-                <p class="text-center paragrafosDark">Aplicação desenvolvida individualmente, no
-                    Bootcamp,
-                    afim de ensinar as tecnologias para aplicá-las no Projeto Integrador do Bootcamp.
+                <p class="text-center paragrafos paragrafosDark">Aplicação desenvolvida individualmente, no
+                    Bootcamp Generation, afim de ensinar as tecnologias para aplicá-las no Projeto Integrador.
                     <b>Tecnologias:</b> Java, MySQL, PostgreSQL, Spring Boot, Security (Basic64), Eclipse,
                     Heroku, Bootstrap, HTML, CSS, Angular, TypeScript, VSCode, Netlify, Git, GitHub.
                 </p>
@@ -313,11 +282,9 @@
                 <a class="link" href="https://bruna41.github.io/Bootstrap-TokyoGhoul/" target="_blank">
                     <h5 class="text-center subtitulo link mt-1">Bootstrap-TokyoGhoul</h5>
                 </a>
-                <p class="text-center paragrafosDark">Atividade individual com tema livre,
-                    desenvolvida no
-                    Bootcamp para aprender e treinar a ferramenta. <b>Tecnologias:</b> Bootstrap, VSCode,
-                    Git,
-                    GitHub.
+                <p class="text-center paragrafos paragrafosDark">Atividade individual com tema livre,
+                    desenvolvida no Bootcamp Generation para aprender e treinar Bootstrap. <b>Tecnologias:</b> Bootstrap, VSCode,
+                    Git, GitHub.
                 </p>
             </article>
             <article class="col-md-3 mb-4">
@@ -327,23 +294,8 @@
                 <a class="link" href="https://github.com/bruna41/GenerationBrasil_ProjetoPOO" target="_blank">
                     <h5 class="text-center subtitulo link mt-1">ProjetoPOO Generation Brasil</h5>
                 </a>
-                <p class="card-text text-center paragrafosDark">Primeiro trabalho em equipe do Bootcamp.
-                    Desenvolvemos um sistema de controle de acesso de um condomínio. Equipe muito empática e
-                    harmônica. <b>Tecnologias:</b> Java, Eclipse, Git, GitHub.
-                </p>
-            </article>
-            <article class="col-md-3 mb-4">
-                <a href="https://medium.com/@bruna41bergami" target="_blank"><img
-                        src="https://mdback.mstatic.com.br/courses/2/254cd6a45a6b4b708885d438bd35fe93.png" class="logos"
-                        alt="lápis e papel"></a>
-                <a class="link" href="https://medium.com/@bruna41bergami" target="_blank">
-                    <h5 class="text-center subtitulo link mt-1">Escritos</h5>
-                </a>
-                <p class="text-center paragrafosDark">No período de cursinho pré-vestibular, fiz
-                    muitas
-                    redações e decidi publicar algumas, que realmente achei boas, no medium. Assim como,
-                    alguns
-                    poemas que escrevi.
+                <p class="card-text text-center paragrafos paragrafosDark">Primeiro trabalho, em equipe, do Bootcamp Generation.
+                    Desenvolvemos um sistema de controle de acesso de um condomínio. Aprendendo POO em Java, sem FrontEnd, apenas saída no console. <b>Tecnologias:</b> Java, Eclipse, Git, GitHub.
                 </p>
             </article>
             <article class="col-md-3 mb-4">
@@ -353,18 +305,29 @@
                 <a class="link" href="desenhos.html">
                     <h5 class="text-center subtitulo link mt-1">Desenhos</h5>
                 </a>
-                <p class="text-center paragrafosDark">Gosto de me expressar por palavras e por imagens
-                    também.
+                <p class="text-center paragrafos paragrafosDark">Gosto de me expressar em palavras e por meio de desenhos.
                 </p>
             </article>
+            <article class="col-md-3 mb-4">
+                <a href="https://medium.com/@bruna41bergami" target="_blank"><img
+                        src="https://mdback.mstatic.com.br/courses/2/254cd6a45a6b4b708885d438bd35fe93.png" class="logos"
+                        alt="lápis e papel"></a>
+                <a class="link" href="https://medium.com/@bruna41bergami" target="_blank">
+                    <h5 class="text-center subtitulo link mt-1">Escritos</h5>
+                </a>
+                <p class="text-center paragrafos paragrafosDark">No período de cursinho pré-vestibular, fiz
+                    muitas redações e decidi publicar algumas, que realmente achei boas, no medium. Assim como,
+                    alguns poemas que escrevi.
+                </p>
+            </article>  
         </div>
     </section>
     <!-- /Projetos -->
 
     <footer>
-        <hr class="hrDark">
-        <p class="text-center copyDark">
-            Bruna Bergami&copy; 2023
+        <hr id="hrFooter" class="hrDark">
+        <p id="nomeFooter" class="text-center copyDark">
+            Bruna Bergami&copy; <span id="corpy"></span>
         </p>
     </footer>
 
