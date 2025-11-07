@@ -120,7 +120,7 @@ function mais3() {
     } else {
         pontos.style.display = 'none'
         maisTexto.style.display = 'inline'
-        btn.innerHTML = 'Esconder'
+        btn.innerHTML = '<br>Esconder'
     }
 }
 
@@ -136,7 +136,7 @@ function mais4() {
     } else {
         pontos.style.display = 'none'
         maisTexto.style.display = 'inline'
-        btn.innerHTML = 'Esconder'
+        btn.innerHTML = '<br>Esconder'
     }
 }
 
@@ -152,7 +152,23 @@ function mais5() {
     } else {
         pontos.style.display = 'none'
         maisTexto.style.display = 'inline'
-        btn.innerHTML = 'Esconder'
+        btn.innerHTML = '<br>Esconder'
+    }
+}
+
+function mais6() {
+    let pontos = document.getElementById('pontinhos6')
+    let maisTexto = document.getElementById('leiaMais6')
+    let btn = document.getElementById('btnLeiaMais6')
+
+    if (pontos.style.display === 'none') {
+        pontos.style.display = 'inline'
+        maisTexto.style.display = 'none'
+        btn.innerHTML = 'Leia Mais'
+    } else {
+        pontos.style.display = 'none'
+        maisTexto.style.display = 'inline'
+        btn.innerHTML = '<br>Esconder'
     }
 }
 

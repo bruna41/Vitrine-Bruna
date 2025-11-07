@@ -22,6 +22,20 @@
     background-color: rgb(32, 28, 28);
 }
 
+.voltar{
+    color: rgb(165, 89, 241);
+    padding-top: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    border-bottom: solid rgb(165, 89, 241);
+    cursor: pointer;
+
+    &:hover {
+        color: #f58a8a !important;
+        border-bottom: solid #f58a8a;
+    }
+}
+
 .legenda {
     color: rgb(52, 17, 52);
     padding-top: 5px;

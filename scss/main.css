@@ -19,6 +19,13 @@
   background-color: rgb(32, 28, 28);
 }
 
+.voltar {
+  padding-top: 5px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 .legenda {
   color: rgb(52, 17, 52);
   padding-top: 5px;
@@ -202,7 +209,7 @@ body::-webkit-scrollbar-thumb {
 .foto {
   float: left;
   width: 150px;
-  height: 150px;
+  height: 145px;
   margin-right: 10px;
 }
 
@@ -265,6 +272,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 #leiaMais5 {
+  display: none;
+}
+
+#leiaMais6 {
   display: none;
 }
 

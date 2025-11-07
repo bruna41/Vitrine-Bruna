@@ -2,17 +2,17 @@ let fotosDesenho = document.querySelectorAll('.fotoDesenho')
 
 fotosDesenho.forEach(fotoDesenho => {
     fotoDesenho.addEventListener('click', () => {
-        removeExpansao()
-        fotoDesenho.classList.add('expandir')
+        if (fotoDesenho.classList.contains('expandir')) {
+            fotoDesenho.classList.remove('expandir')
+            fotoDesenho.style.transition = '1.5s'
+            fotoDesenho.style.cursor = 'zoom-in'
+        } else {
+            fotoDesenho.classList.add('expandir')
+            fotoDesenho.style.cursor = 'zoom-out'
+        }
     })
     
 })
-
-function removeExpansao() {
-    fotosDesenho.forEach(fotoDesenho => {
-        fotoDesenho.classList.remove('expandir')
-    })
-}
 
 // atualizar corpy
 let data = new Date
